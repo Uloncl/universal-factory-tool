@@ -4,22 +4,22 @@ This Project is inteded to be a tool similar to the satisfactory modeller tool o
 
 ### This tool should be capable of the following:
 1. [ ] the ability to place nodes representing recipes on an area
-  - [ ] a node should have these various properties
-    - [ ] a name
-    - [ ] a machine
-    - [ ] an optional input resource(s)
-    - [ ] an optional output resources
-    - [ ] an optional power requirement
+    - [ ] a node should have these various properties
+      - [ ] a name
+      - [ ] a machine
+      - [ ] an optional input resource(s)
+      - [ ] an optional output resources
+      - [ ] an optional power requirement
 2. [ ] the ability to connect the inputs and output resources of nodes to each other
-  - [ ] a connection should have these various properties
-    - [ ] a calculated amount based on input required by the target node/recipe
-    - [ ] a colour
-    - [ ] an optional method (belt/train/truck/etc)
-    - [ ] an optional calculated surplus in the case that the output is larger than the input amount in someway
-      - [ ] e.g. a byproduct of a recipe cannot be totally consumed by a target node
-    - [ ] a display method which should be either smooth or sharp
-      - [ ] a smooth conenction would be created as a bezier line where its nodes can be adjusted as well as allowing additional nodes to be created allowing full customisation of where the line goes
-      - [ ] a sharp line should connect to its target only through 90<sup>o</sup> (or potentially 45<sup>o</sup> ) corners
+    - [ ] a connection should have these various properties
+      - [ ] a calculated amount based on input required by the target node/recipe
+      - [ ] a colour
+      - [ ] an optional method (belt/train/truck/etc)
+      - [ ] an optional calculated surplus in the case that the output is larger than the input amount in someway
+        - [ ] e.g. a byproduct of a recipe cannot be totally consumed by a target node
+      - [ ] a display method which should be either smooth or sharp
+        - [ ] a smooth conenction would be created as a bezier line where its nodes can be adjusted as well as allowing additional nodes to be created allowing full customisation of where the line goes
+        - [ ] a sharp line should connect to its target only through 90<sup>o</sup> (or potentially 45<sup>o</sup> ) corners
 3. [ ] customisability/moddability through having each games assets defined externally from the executable
   - [ ] each supported game (at a minimum this would be Satisfactory, Factorio and Dyson Sphere Program) would have its own json file which would define a list of raw recources, recipes, machines, transport methods and special nodes (e.g. Space Elevator for Satisfactory or a Dyson Sphere Vertical Launching Silo)
 4. [ ] the ability to assign a group of nodes to a "factory"
