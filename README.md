@@ -4,12 +4,12 @@ This Project is inteded to be a tool similar to the satisfactory modeller tool o
 
 ### This tool should be capable of the following:
 1. [ ] the ability to place nodes representing recipes on an area
-    - [ ] a node should have these various properties
-      - [ ] a name
-      - [ ] a machine
-      - [ ] an optional input resource(s)
-      - [ ] an optional output resources
-      - [ ] an optional power requirement
+    - [x] a node should have these various properties
+      - [x] a name
+      - [x] a machine
+      - [x] an optional input resource(s)
+      - [x] an optional output resources
+      - [x] an optional power requirement
 2. [ ] the ability to connect the inputs and output resources of nodes to each other
     - [ ] a connection should have these various properties
       - [ ] a calculated amount based on input required by the target node/recipe
@@ -26,7 +26,7 @@ This Project is inteded to be a tool similar to the satisfactory modeller tool o
     - [ ] the ability to snap to each other like lines on a subway map so they can run parallel to each other
     - [ ] the ability to branch from each other at nodes (not recipe nodes but the nodes that define the shape of the line, e.g. bezier line nodes or the corners of sharp lines)
 3. [ ] customisability/moddability through having each games assets defined externally from the executable
-    - [ ] a resource directory where assets and definitions can be stored
+    - [x] a resource directory where assets and definitions can be stored
       - [ ] each directory in the resource directory will be treated as a different game
     - [ ] each game should have an asset directory where images are stored and a set of json files which define recipes, machines, transport methods and special/unique nodes
       - [ ] images can be stored in whatever way is best for each game as long as they are all under the asset directory
