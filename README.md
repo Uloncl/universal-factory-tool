@@ -15,11 +15,16 @@ This Project is inteded to be a tool similar to the satisfactory modeller tool o
       - [ ] a calculated amount based on input required by the target node/recipe
       - [ ] a colour
       - [ ] an optional method (belt/train/truck/etc)
-      - [ ] an optional calculated surplus in the case that the output is larger than the input amount in someway
-        - [ ] e.g. a byproduct of a recipe cannot be totally consumed by a target node
-      - [ ] a display method which should be either smooth or sharp
-        - [ ] a smooth conenction would be created as a bezier line where its nodes can be adjusted as well as allowing additional nodes to be created allowing full customisation of where the line goes
-        - [ ] a sharp line should connect to its target only through 90<sup>o</sup> (or potentially 45<sup>o</sup> ) corners
+    - [ ] special cases for byproduct resources
+      - [ ] calculates the surplus value for cases where the amount of a resource producted as a byproduct is larger than the amount that can be consumed by the target node
+        - [ ] when creating a branch on a connection with a surplus it will automatically create a node that can consume the amount of surplus
+      - [ ] calculates the deficit value for cases where the amount of a resource produced as a byproduct is smaller than the amount that can be consumed by the target node
+        - [ ] when creating a branch on a connection with a defecit it will automatically create a node that can produce the amount of required by the defecit
+    - [ ] a display method which should be either smooth or sharp
+      - [ ] a smooth conenction would be created as a bezier line where its nodes can be adjusted as well as allowing additional nodes to be created allowing full customisation of where the line goes
+      - [ ] a sharp line should connect to its target only through 90<sup>o</sup> (or potentially 45<sup>o</sup> ) corners
+    - [ ] the ability to snap to each other like lines on a subway map so they can run parallel to each other
+    - [ ] the ability to branch from each other at nodes (not recipe nodes but the nodes that define the shape of the line, e.g. bezier line nodes or the corners of sharp lines)
 3. [ ] customisability/moddability through having each games assets defined externally from the executable
     - [ ] each supported game (at a minimum this would be Satisfactory, Factorio and Dyson Sphere Program) would have its own json file which would define a list of raw recources, recipes, machines, transport methods and special nodes (e.g. Space Elevator for Satisfactory or a Dyson Sphere Vertical Launching Silo)
 4. [ ] the ability to assign a group of nodes to a "factory"
