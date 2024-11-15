@@ -26,7 +26,11 @@ This Project is inteded to be a tool similar to the satisfactory modeller tool o
     - [ ] the ability to snap to each other like lines on a subway map so they can run parallel to each other
     - [ ] the ability to branch from each other at nodes (not recipe nodes but the nodes that define the shape of the line, e.g. bezier line nodes or the corners of sharp lines)
 3. [ ] customisability/moddability through having each games assets defined externally from the executable
-    - [ ] each supported game (at a minimum this would be Satisfactory, Factorio and Dyson Sphere Program) would have its own json file which would define a list of raw recources, recipes, machines, transport methods and special nodes (e.g. Space Elevator for Satisfactory or a Dyson Sphere Vertical Launching Silo)
+    - [ ] a resource directory where assets and definitions can be stored
+      - [ ] each directory in the resource directory will be treated as a different game
+    - [ ] each game should have an asset directory where images are stored and a set of json files which define recipes, machines, transport methods and special/unique nodes
+      - [ ] images can be stored in whatever way is best for each game as long as they are all under the asset directory
+      - [ ] json files can reference any image under its local asset directory by specifying the path to that image relative to the asset directory (e.g. `"image": "assets/machines/contructor.png"`)
 4. [ ] the ability to assign a group of nodes to a "factory"
     - [ ] a factory would display as a square that encloses the selected nodes
     - [ ] a factory would function similarly to a node and would inherit/sum all of the values of the nodes it contains
